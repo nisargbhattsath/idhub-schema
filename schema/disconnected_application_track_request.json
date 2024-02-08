@@ -1,0 +1,751 @@
+[
+  {
+    "_id": {
+      "$oid": "65c51275428cde3ecc8e1c74"
+    },
+    "IDM": "IDE",
+    "_etag": {
+      "$oid": "65c512ce3462340007e394d7"
+    },
+    "collection": "UserRequest",
+    "createdOn": "2024-02-08T17:43:29.952Z",
+    "history": [
+      {
+        "diff": {
+          "payload": {
+            "target-system": {
+              "IDM": "IDE",
+              "ITOwner": "jerome",
+              "applicationURL": "https://new-app.com",
+              "approvalWorkflow": "Auto Approval",
+              "approvalWorkflowDisplayName": "Auto Approval",
+              "authenticationType": "",
+              "businessOwner": "jerome",
+              "connectionCredentials": "",
+              "connectorCredentials": "",
+              "connectorPassword": "",
+              "connectorURL": "",
+              "connectorUserName": "",
+              "description": "New Application Description",
+              "displayName": "New Application",
+              "entitlements": [
+                {
+                  "approvalWorkflow": "Auto Approval",
+                  "approvalWorkflowDisplayName": "Auto Approval",
+                  "description": "ent1",
+                  "displayName": "ent1",
+                  "form": [
+                    {
+                      "dataType": "datetime",
+                      "description": "",
+                      "name": "accessRevokeDate",
+                      "options": [],
+                      "required": false
+                    },
+                    {
+                      "dataType": "checkbox",
+                      "description": "attr1 desc",
+                      "name": "attr1",
+                      "options": ["a", "b", "c", "d"],
+                      "required": true
+                    }
+                  ],
+                  "isCertifiable": "",
+                  "isRequestable": true,
+                  "name": "ent1",
+                  "performer": "All Employees",
+                  "riskLevel": "low",
+                  "searchTags": "ent1keyword",
+                  "type": "Ent Type"
+                }
+              ],
+              "form": [
+                {
+                  "dataType": "datetime",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "matchingAttribute": "",
+                  "name": "accessRevokeDate",
+                  "syncDirection": "no-sync"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": true,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": true,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "email",
+                  "name": "email",
+                  "syncDirection": "bi-directional"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "displayName",
+                  "name": "displayName",
+                  "syncDirection": "app-to-idhub"
+                }
+              ],
+              "integrationLevel": "Disconnected",
+              "isCertifiable": "",
+              "isRequestable": true,
+              "logoURL": "Logo.files/65c512423462340007e394b9/binary",
+              "name": "New Application",
+              "performer": "All Employees",
+              "reason": "awda",
+              "reconSchedule": "",
+              "reconScheduleEndDate": "",
+              "reconciliationSchedule": "",
+              "requestFormId": "",
+              "requestFormName": "",
+              "riskLevel": "low",
+              "schedule": {
+                "repeat": "Do not repeat"
+              },
+              "searchTags": "New, Application",
+              "trustedReconciliation": false,
+              "workflowRequestFormId": ""
+            },
+            "type": "create"
+          },
+          "requester": {
+            "displayName": "Jerome Fern",
+            "email": "jerome@iamsath.com",
+            "login": "jerome"
+          },
+          "status": "Waiting for Approval"
+        },
+        "snapshot": {
+          "IDM": "IDE",
+          "_id": "65c51275428cde3ecc8e1c74",
+          "collection": "UserRequest",
+          "createdOn": "2024-02-08T17:43:29.952Z",
+          "justification": "awda",
+          "payload": {
+            "target-system": {
+              "IDM": "IDE",
+              "ITOwner": "jerome",
+              "applicationURL": "https://new-app.com",
+              "approvalWorkflow": "Auto Approval",
+              "approvalWorkflowDisplayName": "Auto Approval",
+              "authenticationType": "",
+              "businessOwner": "jerome",
+              "connectionCredentials": "",
+              "connectorCredentials": "",
+              "connectorPassword": "",
+              "connectorURL": "",
+              "connectorUserName": "",
+              "description": "New Application Description",
+              "displayName": "New Application",
+              "entitlements": [
+                {
+                  "approvalWorkflow": "Auto Approval",
+                  "approvalWorkflowDisplayName": "Auto Approval",
+                  "description": "ent1",
+                  "displayName": "ent1",
+                  "form": [
+                    {
+                      "dataType": "datetime",
+                      "description": "",
+                      "name": "accessRevokeDate",
+                      "options": [],
+                      "required": false
+                    },
+                    {
+                      "dataType": "checkbox",
+                      "description": "attr1 desc",
+                      "name": "attr1",
+                      "options": ["a", "b", "c", "d"],
+                      "required": true
+                    }
+                  ],
+                  "isCertifiable": "",
+                  "isRequestable": true,
+                  "name": "ent1",
+                  "performer": "All Employees",
+                  "riskLevel": "low",
+                  "searchTags": "ent1keyword",
+                  "type": "Ent Type"
+                }
+              ],
+              "form": [
+                {
+                  "dataType": "datetime",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "matchingAttribute": "",
+                  "name": "accessRevokeDate",
+                  "syncDirection": "no-sync"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": true,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": true,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "email",
+                  "name": "email",
+                  "syncDirection": "bi-directional"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "displayName",
+                  "name": "displayName",
+                  "syncDirection": "app-to-idhub"
+                }
+              ],
+              "integrationLevel": "Disconnected",
+              "isCertifiable": "",
+              "isRequestable": true,
+              "logoURL": "Logo.files/65c512423462340007e394b9/binary",
+              "name": "New Application",
+              "performer": "All Employees",
+              "reason": "awda",
+              "reconSchedule": "",
+              "reconScheduleEndDate": "",
+              "reconciliationSchedule": "",
+              "requestFormId": "",
+              "requestFormName": "",
+              "riskLevel": "low",
+              "schedule": {
+                "repeat": "Do not repeat"
+              },
+              "searchTags": "New, Application",
+              "trustedReconciliation": false,
+              "workflowRequestFormId": ""
+            },
+            "type": "create"
+          },
+          "requestType": "Catalog",
+          "requester": {
+            "displayName": "Jerome Fern",
+            "email": "jerome@iamsath.com",
+            "login": "jerome"
+          },
+          "resolution": "Initiated",
+          "status": "Request Submitted",
+          "summary": "New Application Request - New Application",
+          "workflowName": "AIMS Approval"
+        },
+        "timeStamp": "2024-02-08T17:43:42.031+0000"
+      }
+    ],
+    "justification": "awda",
+    "payload": {
+      "target-system": {
+        "IDM": "IDE",
+        "ITOwner": "jerome",
+        "applicationURL": "https://new-app.com",
+        "approvalWorkflow": "Auto Approval",
+        "approvalWorkflowDisplayName": "Auto Approval",
+        "authenticationType": "",
+        "businessOwner": "jerome",
+        "connectionCredentials": "",
+        "connectorCredentials": "",
+        "connectorPassword": "",
+        "connectorURL": "",
+        "connectorUserName": "",
+        "description": "New Application Description",
+        "displayName": "New Application",
+        "entitlements": [
+          {
+            "approvalWorkflow": "Auto Approval",
+            "approvalWorkflowDisplayName": "Auto Approval",
+            "description": "ent1",
+            "displayName": "ent1",
+            "form": [
+              {
+                "dataType": "datetime",
+                "description": "",
+                "name": "accessRevokeDate",
+                "options": [],
+                "required": false
+              },
+              {
+                "dataType": "checkbox",
+                "description": "attr1 desc",
+                "name": "attr1",
+                "options": ["a", "b", "c", "d"],
+                "required": true
+              }
+            ],
+            "isCertifiable": "",
+            "isRequestable": true,
+            "name": "ent1",
+            "performer": "All Employees",
+            "riskLevel": "low",
+            "searchTags": "ent1keyword",
+            "type": "Ent Type"
+          }
+        ],
+        "form": [
+          {
+            "dataType": "datetime",
+            "isAccountName": false,
+            "isDisabled": false,
+            "isMultiValue": false,
+            "isReconKey": false,
+            "isRequired": false,
+            "isVisible": true,
+            "matchingAttribute": "",
+            "name": "accessRevokeDate",
+            "syncDirection": "no-sync"
+          },
+          {
+            "dataType": "string",
+            "isAccountName": true,
+            "isDisabled": false,
+            "isMultiValue": false,
+            "isReconKey": true,
+            "isRequired": true,
+            "isVisible": true,
+            "matchingAttribute": "email",
+            "name": "email",
+            "syncDirection": "bi-directional"
+          },
+          {
+            "dataType": "string",
+            "isAccountName": false,
+            "isDisabled": false,
+            "isMultiValue": false,
+            "isReconKey": false,
+            "isRequired": true,
+            "isVisible": true,
+            "matchingAttribute": "displayName",
+            "name": "displayName",
+            "syncDirection": "app-to-idhub"
+          }
+        ],
+        "integrationLevel": "Disconnected",
+        "isCertifiable": "",
+        "isRequestable": true,
+        "logoURL": "Logo.files/65c512423462340007e394b9/binary",
+        "name": "New Application",
+        "performer": "All Employees",
+        "reason": "awda",
+        "reconSchedule": "",
+        "reconScheduleEndDate": "",
+        "reconciliationSchedule": "",
+        "requestFormId": "",
+        "requestFormName": "",
+        "riskLevel": "low",
+        "schedule": {
+          "repeat": "Do not repeat"
+        },
+        "searchTags": "New, Application",
+        "trustedReconciliation": false,
+        "workflowRequestFormId": ""
+      },
+      "type": "create"
+    },
+    "requestType": "Catalog",
+    "requester": {
+      "displayName": "Jerome Fern",
+      "email": "jerome@iamsath.com",
+      "login": "jerome"
+    },
+    "resolution": "Initiated",
+    "status": "Waiting for Approval",
+    "summary": "New Application Request - New Application",
+    "workflowName": "AIMS Approval"
+  },
+  {
+    "_id": {
+      "$oid": "65c51275428cde3ecc8e1c74"
+    },
+    "IDM": "IDE",
+    "_etag": {
+      "$oid": "65c5197d3462340007e394e5"
+    },
+    "collection": "UserRequest",
+    "createdOn": "2024-02-08T17:43:29.952Z",
+    "history": [
+      {
+        "diff": {
+          "payload": {
+            "target-system": {
+              "IDM": "IDE",
+              "ITOwner": "jerome",
+              "applicationURL": "https://new-app.com",
+              "approvalWorkflow": "Auto Approval",
+              "approvalWorkflowDisplayName": "Auto Approval",
+              "authenticationType": "",
+              "businessOwner": "jerome",
+              "connectionCredentials": "",
+              "connectorCredentials": "",
+              "connectorPassword": "",
+              "connectorURL": "",
+              "connectorUserName": "",
+              "description": "New Application Description",
+              "displayName": "New Application",
+              "entitlements": [
+                {
+                  "approvalWorkflow": "Auto Approval",
+                  "approvalWorkflowDisplayName": "Auto Approval",
+                  "description": "ent1",
+                  "displayName": "ent1",
+                  "form": [
+                    {
+                      "dataType": "datetime",
+                      "description": "",
+                      "name": "accessRevokeDate",
+                      "options": [],
+                      "required": false
+                    },
+                    {
+                      "dataType": "checkbox",
+                      "description": "attr1 desc",
+                      "name": "attr1",
+                      "options": ["a", "b", "c", "d"],
+                      "required": true
+                    }
+                  ],
+                  "isCertifiable": "",
+                  "isRequestable": true,
+                  "name": "ent1",
+                  "performer": "All Employees",
+                  "riskLevel": "low",
+                  "searchTags": "ent1keyword",
+                  "type": "Ent Type"
+                }
+              ],
+              "form": [
+                {
+                  "dataType": "datetime",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "matchingAttribute": "",
+                  "name": "accessRevokeDate",
+                  "syncDirection": "no-sync"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": true,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": true,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "email",
+                  "name": "email",
+                  "syncDirection": "bi-directional"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "displayName",
+                  "name": "displayName",
+                  "syncDirection": "app-to-idhub"
+                }
+              ],
+              "integrationLevel": "Disconnected",
+              "isCertifiable": "",
+              "isRequestable": true,
+              "logoURL": "Logo.files/65c512423462340007e394b9/binary",
+              "name": "New Application",
+              "performer": "All Employees",
+              "reason": "awda",
+              "reconSchedule": "",
+              "reconScheduleEndDate": "",
+              "reconciliationSchedule": "",
+              "requestFormId": "",
+              "requestFormName": "",
+              "riskLevel": "low",
+              "schedule": {
+                "repeat": "Do not repeat"
+              },
+              "searchTags": "New, Application",
+              "trustedReconciliation": false,
+              "workflowRequestFormId": ""
+            },
+            "type": "create"
+          },
+          "requester": {
+            "displayName": "Jerome Fern",
+            "email": "jerome@iamsath.com",
+            "login": "jerome"
+          },
+          "status": "Waiting for Approval"
+        },
+        "snapshot": {
+          "IDM": "IDE",
+          "_id": "65c51275428cde3ecc8e1c74",
+          "collection": "UserRequest",
+          "createdOn": "2024-02-08T17:43:29.952Z",
+          "justification": "awda",
+          "payload": {
+            "target-system": {
+              "IDM": "IDE",
+              "ITOwner": "jerome",
+              "applicationURL": "https://new-app.com",
+              "approvalWorkflow": "Auto Approval",
+              "approvalWorkflowDisplayName": "Auto Approval",
+              "authenticationType": "",
+              "businessOwner": "jerome",
+              "connectionCredentials": "",
+              "connectorCredentials": "",
+              "connectorPassword": "",
+              "connectorURL": "",
+              "connectorUserName": "",
+              "description": "New Application Description",
+              "displayName": "New Application",
+              "entitlements": [
+                {
+                  "approvalWorkflow": "Auto Approval",
+                  "approvalWorkflowDisplayName": "Auto Approval",
+                  "description": "ent1",
+                  "displayName": "ent1",
+                  "form": [
+                    {
+                      "dataType": "datetime",
+                      "description": "",
+                      "name": "accessRevokeDate",
+                      "options": [],
+                      "required": false
+                    },
+                    {
+                      "dataType": "checkbox",
+                      "description": "attr1 desc",
+                      "name": "attr1",
+                      "options": ["a", "b", "c", "d"],
+                      "required": true
+                    }
+                  ],
+                  "isCertifiable": "",
+                  "isRequestable": true,
+                  "name": "ent1",
+                  "performer": "All Employees",
+                  "riskLevel": "low",
+                  "searchTags": "ent1keyword",
+                  "type": "Ent Type"
+                }
+              ],
+              "form": [
+                {
+                  "dataType": "datetime",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "matchingAttribute": "",
+                  "name": "accessRevokeDate",
+                  "syncDirection": "no-sync"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": true,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": true,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "email",
+                  "name": "email",
+                  "syncDirection": "bi-directional"
+                },
+                {
+                  "dataType": "string",
+                  "isAccountName": false,
+                  "isDisabled": false,
+                  "isMultiValue": false,
+                  "isReconKey": false,
+                  "isRequired": true,
+                  "isVisible": true,
+                  "matchingAttribute": "displayName",
+                  "name": "displayName",
+                  "syncDirection": "app-to-idhub"
+                }
+              ],
+              "integrationLevel": "Disconnected",
+              "isCertifiable": "",
+              "isRequestable": true,
+              "logoURL": "Logo.files/65c512423462340007e394b9/binary",
+              "name": "New Application",
+              "performer": "All Employees",
+              "reason": "awda",
+              "reconSchedule": "",
+              "reconScheduleEndDate": "",
+              "reconciliationSchedule": "",
+              "requestFormId": "",
+              "requestFormName": "",
+              "riskLevel": "low",
+              "schedule": {
+                "repeat": "Do not repeat"
+              },
+              "searchTags": "New, Application",
+              "trustedReconciliation": false,
+              "workflowRequestFormId": ""
+            },
+            "type": "create"
+          },
+          "requestType": "Catalog",
+          "requester": {
+            "displayName": "Jerome Fern",
+            "email": "jerome@iamsath.com",
+            "login": "jerome"
+          },
+          "resolution": "Initiated",
+          "status": "Request Submitted",
+          "summary": "New Application Request - New Application",
+          "workflowName": "AIMS Approval"
+        },
+        "timeStamp": "2024-02-08T17:43:42.031+0000"
+      }
+    ],
+    "justification": "awda",
+    "payload": {
+      "entityId": "65c5197b428cde3ecc8e800c",
+      "entityType": "TargetSystem",
+      "target-system": {
+        "IDM": "IDE",
+        "ITOwner": "jerome",
+        "applicationURL": "https://new-app.com",
+        "approvalWorkflow": "Auto Approval",
+        "approvalWorkflowDisplayName": "Auto Approval",
+        "authenticationType": "",
+        "businessOwner": "jerome",
+        "collection": "TargetSystem",
+        "connectionCredentials": "",
+        "connectorCredentials": "",
+        "connectorPassword": "",
+        "connectorURL": "",
+        "connectorUserName": "",
+        "description": "New Application Description",
+        "displayName": "New Application",
+        "entitlements": [
+          {
+            "approvalWorkflow": "Auto Approval",
+            "approvalWorkflowDisplayName": "Auto Approval",
+            "description": "ent1",
+            "displayName": "ent1",
+            "form": [
+              {
+                "dataType": "datetime",
+                "description": "",
+                "name": "accessRevokeDate",
+                "options": [],
+                "required": false
+              },
+              {
+                "dataType": "checkbox",
+                "description": "attr1 desc",
+                "name": "attr1",
+                "options": ["a", "b", "c", "d"],
+                "required": true
+              }
+            ],
+            "isCertifiable": "",
+            "isRequestable": true,
+            "name": "ent1",
+            "performer": "All Employees",
+            "riskLevel": "low",
+            "searchTags": "ent1keyword",
+            "type": "Ent Type"
+          }
+        ],
+        "form": [
+          {
+            "dataType": "datetime",
+            "isAccountName": false,
+            "isDisabled": false,
+            "isMultiValue": false,
+            "isReconKey": false,
+            "isRequired": false,
+            "isVisible": true,
+            "matchingAttribute": "",
+            "name": "accessRevokeDate",
+            "syncDirection": "no-sync"
+          },
+          {
+            "dataType": "string",
+            "isAccountName": true,
+            "isDisabled": false,
+            "isMultiValue": false,
+            "isReconKey": true,
+            "isRequired": true,
+            "isVisible": true,
+            "matchingAttribute": "email",
+            "name": "email",
+            "syncDirection": "bi-directional"
+          },
+          {
+            "dataType": "string",
+            "isAccountName": false,
+            "isDisabled": false,
+            "isMultiValue": false,
+            "isReconKey": false,
+            "isRequired": true,
+            "isVisible": true,
+            "matchingAttribute": "displayName",
+            "name": "displayName",
+            "syncDirection": "app-to-idhub"
+          }
+        ],
+        "integrationLevel": "Disconnected",
+        "isCertifiable": "",
+        "isRequestable": true,
+        "logoURL": "Logo.files/65c512423462340007e394b9/binary",
+        "name": "New Application",
+        "performer": "All Employees",
+        "reason": "awda",
+        "reconSchedule": "",
+        "reconScheduleEndDate": "",
+        "reconciliationSchedule": "",
+        "requestFormId": "",
+        "requestFormName": "",
+        "riskLevel": "low",
+        "schedule": {
+          "repeat": "Do not repeat"
+        },
+        "searchTags": "New, Application",
+        "trustedReconciliation": false,
+        "workflowRequestFormId": ""
+      },
+      "type": "create"
+    },
+    "requestType": "Catalog",
+    "requester": {
+      "displayName": "Jerome Fern",
+      "email": "jerome@iamsath.com",
+      "login": "jerome"
+    },
+    "resolution": "Success",
+    "status": "Request Completed",
+    "summary": "New Application Request - New Application",
+    "workflowName": "AIMS Approval"
+  }
+]
