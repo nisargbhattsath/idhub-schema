@@ -1,113 +1,27 @@
-export type TargetSystemForm = {
-  dataType: string;
-  isAccountName: boolean;
-  isDisabled: boolean;
-  isMultiValue: boolean;
-  isReconKey: boolean;
-  isRequired: boolean;
-  isVisible: boolean;
-  matchingAttribute: string;
-  name: string;
-  syncDirection: string;
-  options?: string[];
-};
+import type { TargetSystem } from "./TargetSystem";
+import type { Entitlement } from "./Entitlement";
 
-export type EntitlementForm = {
-  dataType: string;
-  description: string;
-  name: string;
-  options?: string[];
-  required: boolean;
-};
-
-export type TargetSystemEntitlement = {
-  approvalWorkflow: string;
-  approvalWorkflowDisplayName: string;
-  description: string;
-  displayName: string;
-  /**
-   * Comma separated list used for certification tag list
-   */
-  isCertifiable: string;
-  isRequestable: boolean;
-  name: string;
-  performer: string;
-  riskLevel: string;
-  /**
-   * Comma separated list used for Search Catalog
-   */
-  searchTags: string;
-  type: string;
-  form: EntitlementForm[];
-};
-
-export type TargetSystemIntegrationType =
-  | {
-      integrationLevel: "Disconnected";
-      schedule: {
-        repeat: "Do not repeat";
-      };
-    }
-  | {
-      integrationLevel: "Connected";
-      connectionCredentials: string;
-      connectorCredentials: string;
-      connectorPassword: string;
-      connectorURL: string;
-      connectorUserName: string;
-      reconSchedule: string;
-      reconScheduleEndDate: string;
-      reconciliationSchedule: string;
-      schedule: {
-        repeat: string;
-        [key: string]: string;
-      };
-    };
-
-export type TargetSystemPayload = {
-  IDM: string;
-  /**
-   * IT Owner Login
-   */
-  ITOwner: string;
-  applicationURL?: string;
-  approvalWorkflow: string;
-  approvalWorkflowDisplayName: string;
-  authenticationType: string;
-  /**
-   * Business Owner Login
-   */
-  businessOwner: string;
-  description: string;
-  displayName: string;
-  /**
-   * Comma separated list used for certification tag list
-   */
-  isCertifiable: string;
-  isRequestable: boolean;
-  logoURL?: string;
-  name: string;
-  performer: string;
+export type TargetSystemPayload = Omit<
+  TargetSystem,
+  "_id" | "archiveId" | "collection" | "createdOn"
+> & {
   /**
    * User Reason for adding this app
    */
   reason: string;
-  requestFormId?: string;
-  requestFormName?: string;
-  riskLevel: string;
-  schedule: {
-    repeat: string;
-    [key: string]: string;
-  };
-  /**
-   * Comma separated list used for Search Catalog
-   */
-  searchTags: string;
-  trustedReconciliation: boolean;
-  workflowRequestFormId?: string;
-  form: TargetSystemForm[];
-  entitlements: TargetSystemEntitlement[];
-} & TargetSystemIntegrationType;
+  entitlements: Array<
+    Omit<
+      Entitlement,
+      | "_id"
+      | "collection"
+      | "createdOn"
+      | "lastSyncedOn"
+      | "targetSystemDisplayName"
+      | "targetSystemId"
+      | "targetSystemName"
+    >
+  >;
+};
 
 export type TrackRequestRequester = {
   displayName: string;
@@ -146,7 +60,7 @@ export type TrackRequest = {
   /**
    * User Entered Justification for Request
    */
-  justification: string;
+  justification?: string;
   requestType: "Catalog";
   /**
    * Request Creator Info

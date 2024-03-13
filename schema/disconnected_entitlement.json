@@ -1,0 +1,56 @@
+[
+  {
+    "_id": {
+      "$oid": "65f1ec250c36d07a7c165e2f"
+    },
+    "_etag": {
+      "$oid": "65f1ec25f47dad000787a230"
+    },
+    "IDM": "IDE",
+    "ITOwner": "jerome",
+    "approvalWorkflow": "Group Approval",
+    "approvalWorkflowDisplayName": "Group Approval",
+    "approver1": "All Employees",
+    "approver2": "All Employees",
+    "approver3": "Access Manager",
+    "businessOwner": "jerome",
+    "collection": "Entitlement",
+    "createdOn": "2024-03-13T18:10:45.136Z",
+    "description": "ent1 description",
+    "disabled": false,
+    "displayName": "ent1",
+    "form": [
+      {
+        "dataType": "datetime",
+        "description": "",
+        "name": "accessRevokeDate",
+        "options": [],
+        "required": false
+      },
+      {
+        "dataType": "checkbox",
+        "description": "Gender",
+        "name": "gender",
+        "options": ["c", "v", "a", "wd."],
+        "required": true
+      }
+    ],
+    "isCertifiable": "",
+    "isRequestable": true,
+    "lastSyncedOn": {
+      "$date": {
+        "$numberLong": "1710353445136"
+      }
+    },
+    "name": "ent1",
+    "performer": "All Employees",
+    "requestable": true,
+    "riskLevel": "medium",
+    "searchTags": "ent1, new",
+    "targetSystemDisplayName": "New Application",
+    "targetSystemId": "65f1ec250c36d07a7c165e20",
+    "targetSystemName": "New Application",
+    "type": "ent1 type",
+    "workflowRequestFormId": "6085f65f432acc2a019f1fbe"
+  }
+]

@@ -1,0 +1,332 @@
+[
+  {
+    "_id": {
+      "$oid": "63aec73493ccdf675cc4c210"
+    },
+    "IDM": "IDE",
+    "ITOwner": "derrick",
+    "applicationURL": "https://workspace.google.com/",
+    "approvalWorkflow": "Auto Approval",
+    "approvalWorkflowDisplayName": "Auto Approval",
+    "businessOwner": "derrick",
+    "collection": "TargetSystem",
+    "createdOn": "2022-12-30T11:10:44.245Z",
+    "description": "Google Documents, Spreadsheets, Calendar",
+    "disabled": false,
+    "displayName": "Google Workspace",
+    "form": [
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "displayName",
+        "name": "Display Name",
+        "syncDirection": "app-to-idhub"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": true,
+        "isMultiValue": false,
+        "isReconKey": true,
+        "isRequired": true,
+        "matchingAttribute": "login",
+        "name": "User Login",
+        "syncDirection": "no-sync"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "email",
+        "name": "Email",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "phoneNumber",
+        "name": "Phone Number",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "firstName",
+        "name": "First Name",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "lastName",
+        "name": "Last Name",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "department",
+        "name": "Department",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "jobTitle",
+        "name": "Job Title",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "managerLogin",
+        "name": "Manager Login",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "managerDisplayName",
+        "name": "Manager Display Name",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "status",
+        "name": "Status",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "location",
+        "name": "Location",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "homeAddressLine1",
+        "name": "Home Address Line 1",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "homeAddressCity",
+        "name": "Home Address City",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "homeAddressState",
+        "name": "Home Address State",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "homeAddressZipcode",
+        "name": "Home Address Zip Code",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "officeAddressLine1",
+        "name": "Office Address Line 1",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "officeAddressCity",
+        "name": "Office Address City",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "officeAddressZipcode",
+        "name": "Office Address Zip Code",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "officeAddressState",
+        "name": "Office Address State",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "userType",
+        "name": "User Type",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "organizationName",
+        "name": "Organization Name",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "employeeNumber",
+        "name": "Employee Number",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "provisionedDate",
+        "name": "Provisioned Date",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "createDate",
+        "name": "Create Date",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "homeAddressLine2",
+        "name": "Home Address Line 2",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "officeAddressLine2",
+        "name": "Office Address Line 2",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "homeAddressCountry",
+        "name": "Home Address Country",
+        "syncDirection": "bi-directional"
+      },
+      {
+        "dataType": "string",
+        "isAccountName": false,
+        "isMultiValue": false,
+        "isReconKey": false,
+        "isRequired": false,
+        "matchingAttribute": "officeAddressCountry",
+        "name": "Office Address Country",
+        "syncDirection": "bi-directional"
+      }
+    ],
+    "integrationLevel": "Disconnected",
+    "isRequestable": true,
+    "logoURL": "Logo.files/63aec73493ccdf675cc4c210/binary",
+    "name": "Google Workspace",
+    "performer": "Manual Fulfiller",
+    "riskLevel": "low",
+    "schedule": {
+      "repeat": "Do not repeat"
+    },
+    "searchTags": "All Employees",
+    "trustedReconciliation": true,
+    "authenticationType": "",
+    "connectionCredentials": "",
+    "connectorPassword": "",
+    "connectorURL": "",
+    "connectorUserName": "",
+    "isCertifiable": "",
+    "reconSchedule": "",
+    "requestFormId": "",
+    "requestFormName": "",
+    "workflowRequestFormId": "",
+    "archiveId": "63b706dc453e140ec451d088"
+  }
+]
